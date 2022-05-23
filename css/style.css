@@ -40,7 +40,6 @@ nav ul li a{
 }
 li a.active, li a:hover{
     color: #b50912;
-    font-weight: 700;
     transition: 0.5s;
 }
 .checkbtn{
