@@ -15,7 +15,7 @@ nav{
 nav ul{
     float: right;
     margin-right: 100px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -114,7 +114,7 @@ section:not(.inicio) {
     align-items: flex-start;
     width: 80%;
     height: 15%;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -128,7 +128,7 @@ section:not(.inicio) {
     align-items: flex-start;
     width: 80%;
     height: 10%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -153,6 +153,7 @@ section:not(.inicio) {
     top: 499px;
     background: #EA3B3D;
     border-radius: 50px;
+    border: none;
 }
 .boton_inicio p{
     font-family: 'Roboto', sans-serif;
@@ -298,7 +299,7 @@ h2 {
 
 .titulo-trabajos-container a {
     color: black;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -548,24 +549,97 @@ h2 {
 .contacto-container {
     display: flex;
     margin-top: 100px;
+    
 }
-
 .contacto-container img {
     padding: 0 45px;
 }
-
 .contacto-info {
     width: 500px;
     height: 1033px;
     padding: 0 96px;
 }
+.contacto-titulos h3 {
+    color: #2D2D2D;
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+.contacto-titulos p {
+    font-family: 'Epilogue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
+input {
+    width: 320px;
+    height: 70px;
+    margin-bottom: 18px;
+    padding: 12px 20px;
+    background-color: #F3F3F3;
+    color: #000000;
+    border: none;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+input::placeholder {
+    color: #2D2D2D;
+}
+textarea::placeholder {
+    color: #2D2D2D;
+}
 
+textarea {
+    width: 320px;
+    height: 215px;
+    padding: 12px 20px;
+    background-color: #F3F3F3;
+    color: #2D2D2D;
+    margin-bottom: 44px;
+    resize: none;
+    border: none;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+}
+input[type=submit] {
+    color: white;
+    background-color: #000000;
+    width: 235px;
+    height: 80px;
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+}
 
 .form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+
+
+
+
 /*MEDIA QUERIES*/
 
 @media all and (max-width: 1024px){
@@ -588,7 +662,7 @@ h2 {
         align-items: flex-start;
         width: 80%;
         height: 35%;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -602,7 +676,7 @@ h2 {
         align-items: flex-start;
         width: 80%;
         height: 15%;
-        font-family: 'Poppins';
+        font-family: 'Poppins', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 25px;
@@ -616,7 +690,7 @@ h2 {
         align-items: flex-start;
         width: 80%;
         height: 10%;
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
@@ -641,10 +715,11 @@ h2 {
         top: 499px;
         background: #EA3B3D;
         border-radius: 50px;
+        border: none;
     }
     .boton_inicio p{
         font-family: 'Roboto', sans-serif;
-        font-style: normal b;
+        font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
