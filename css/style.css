@@ -72,78 +72,47 @@ section:not(.inicio) {
     height: 100vh;
     background: #f9d1d1;
     margin-bottom: 80px;
-    display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch;
 }
 
 .inicio-contenedor {
     display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 1440px;
+    height: 100vh;
 }
 .presentacion{
-    width: 55%;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
     flex-direction: column;
+    justify-content: center;
+    width: 55%;
 }
 .presentacion1{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-    width: 80%;
-    height: 35%;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 30px;
-    line-height: 35px;
     color: #B50912;
-}
-.p1{
-    display: flex;
-    align-items: flex-start;
+    padding: 20px;
 }
 .presentacion2{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-    width: 80%;
-    height: 15%;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 48px;
-    line-height: 70px;
     color: #000000;
+    padding: 20px;
 }
 .presentacion3{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-    width: 80%;
-    height: 10%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #494949;
+    padding: 20px;
 }
 .presentacion4{
-    display: flex;
-    justify-content: start;
-    align-items: center;
     width: 75%;
-    height: 50%;
+    padding: 20px;
 }
 .boton_inicio{
     display: flex;
@@ -161,21 +130,16 @@ section:not(.inicio) {
 }
 .boton_inicio p{
     font-family: 'Roboto', sans-serif;
-    font-style: normal b;
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
     color: #151D41;
 }
-.img{
+.img-profile {
     display: flex;
-    width: 45%;
-    height: 95%;
-    align-items: flex-end;
-}
-.img1{
-    border-radius: 50%;
-    width: auto;
+    flex-direction: column;
+    justify-content: center;
 }
 #sobre_mi {
     display: flex;
