@@ -5,6 +5,9 @@
     list-style: none;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 nav{
     background: #f9d1d1;
     height: 80px;
@@ -154,6 +157,7 @@ section:not(.inicio) {
     background: #EA3B3D;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 .boton_inicio p{
     font-family: 'Roboto', sans-serif;
@@ -273,6 +277,9 @@ h2 {
     margin-left: 10px;
 }
 
+.container-rosa-wraper{
+    margin-top: 100px;
+}
 .container-rosa {
     display: flex;
     flex-direction: row;
@@ -547,11 +554,7 @@ h2 {
     transition: all 500ms ease-out;
 }
 
-
-form {
-    margin-bottom: 80px;
-}
-.contacto-container {
+#contacto-container {
     display: flex;
     margin-top: 100px;
     
@@ -646,7 +649,7 @@ footer {
     background-color: #f9d1d1d6;
     border-radius: 15px;
     box-shadow: 0px 0px 20px #aeaeae;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 footer h3 {
     font-family: 'Roboto';
@@ -751,6 +754,7 @@ footer p {
         background: #EA3B3D;
         border-radius: 50px;
         border: none;
+        cursor: pointer;
     }
     .boton_inicio p{
         font-family: 'Roboto', sans-serif;
