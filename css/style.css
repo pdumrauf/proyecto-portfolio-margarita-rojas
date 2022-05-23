@@ -304,6 +304,7 @@ h2 {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    margin-right: 54px;
 }
 
 .img-trabajos {
@@ -546,6 +547,10 @@ h2 {
     transition: all 500ms ease-out;
 }
 
+
+form {
+    margin-bottom: 80px;
+}
 .contacto-container {
     display: flex;
     margin-top: 100px;
@@ -596,7 +601,6 @@ input::placeholder {
 textarea::placeholder {
     color: #2D2D2D;
 }
-
 textarea {
     width: 320px;
     height: 215px;
@@ -629,7 +633,6 @@ input[type=submit] {
     line-height: 30px;
 
 }
-
 .form-container {
     display: flex;
     flex-direction: column;
@@ -637,7 +640,39 @@ input[type=submit] {
 }
 
 
-
+footer {
+    width: 1116px;
+    height: 250px;
+    background-color: #f9d1d1d6;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #aeaeae;
+    margin-bottom: 80px;
+}
+footer h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    margin-top: 71px;
+    margin-left: 45px;
+}
+footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 24px;
+    margin-left: 90px;
+}
+.footer-icon-container {
+    display: flex;
+    justify-content: center;
+}
+.footer-icon-container img {
+    padding: 10px;
+}
 
 
 /*MEDIA QUERIES*/
