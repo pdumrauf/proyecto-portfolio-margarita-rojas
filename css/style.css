@@ -554,7 +554,7 @@ h2 {
     transition: all 500ms ease-out;
 }
 
-#contacto-container {
+.contacto-container {
     display: flex;
     margin-top: 100px;
     
