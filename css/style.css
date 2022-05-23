@@ -40,7 +40,8 @@ nav ul li a{
 }
 li a.active, li a:hover{
     color: #b50912;
-    transition: 1s;
+    font-weight: 700;
+    transition: 0.5s;
 }
 .checkbtn{
     font-size: 30px;
@@ -84,7 +85,7 @@ section:not(.inicio) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 55%;
+    width: 50%;
 }
 .presentacion1{
     font-family: 'Roboto', sans-serif;
@@ -140,6 +141,7 @@ section:not(.inicio) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 20%;
 }
 #sobre_mi {
     display: flex;
@@ -196,9 +198,16 @@ h2 {
 
 .subtitulo {
     text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #494949;
 }
 .lo-que-yo-hago {
     text-align: center;
+    padding-top: 20px;
 }
 .servicios-container {
     display: flex;
@@ -277,17 +286,22 @@ h2 {
     line-height: 30px;
     margin-right: 54px;
 }
-
 .img-trabajos {
     position: relative;
     top: -31px;
 }
 
+h3 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+}
 .trabajos{
     display: flex;
-    height: 10vh;
     justify-content: center;
-    padding-left: 40px;
+    flex-direction: column;
 }
 .division-trabajos{
     display: flex;
