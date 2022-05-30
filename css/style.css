@@ -144,10 +144,22 @@ section:not(.inicio) {
 }
 #sobre_mi {
     display: flex;
-    padding: 50px 0 80px 20px;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
-
+.sobre-mi-1{
+    width: 50%;
+    display: flex;
+}
+.sobre-mi-2{
+    width: 50%;
+    display: flex;
+}
 .sobre_mi {
+    width: 100%;
     padding-left: 50px;
 }
 
@@ -162,14 +174,10 @@ section:not(.inicio) {
     font-size: 18px;
 }
 .img2{
-    width: 653px;
-    height: 408px;
-    left: 20px;
-    top: 743px;
+    width: 100%;
+    height: auto;
 }
 h2 {
-    left: 763.22px;
-    top: 743px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -179,10 +187,8 @@ h2 {
 }
 .habilidades {
     display: flex;
+    width: 40%;
     margin-top: 100px;
-}
-.habilidades ul {
-    margin-right: 150px;
 }
 .habilidades li {
     padding-bottom: 25px;
@@ -208,42 +214,87 @@ h2 {
     text-align: center;
     padding-top: 20px;
 }
-.servicios-container {
-    display: flex;
-    justify-content: center;
+.servicios-titulos{
+    width: 100%;
+    margin-bottom: 60px;
 }
-.grid-container-servicios {
+.mis-servicios{
+    width: 100%;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
     grid-template-rows: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    grid-template-columns: 300px 300px 300px;
+    row-gap: 60px;
+    column-gap: 10px;
 }
-.icon-servicio-container {
+.caja-serv{
+    width: auto;
+}
+.caja-servicios-1{
     display: flex;
-    padding: 20px;
+    width: 45%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: start;
 }
-.icon-img-servicios {
+.caja-servicios-1 img{
     width: 70px;
     height: 70px;
-    margin-right: 20px ;
 }
-.icon-img-mic {
+.caja-servicios-2{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+}
+.caja-servicios-2 img{
+    width: 70px;
+    height: 70px;
+}
+.caja-servicios-3{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+}
+.caja-servicios-3 img{
+    width: 70px;
+    height: 70px;
+}
+.caja-servicios-4{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: start;
+}
+.caja-servicios-4 img{
     width: 43px;
     height: 57px;
-    margin-right: 45px;
 }
-.icon-img-cam {
+.caja-servicios-5{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    margin-right: 20px;
+}
+.caja-servicios-5 img{
     width: 54.19px;
     height: 46.91px;
-    margin-right: 35px;
 }
-.icon-img-video {
+.caja-servicios-6{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+}
+.caja-servicios-6 img{
     width: 54.67px;
     height: 36.2px;
-    margin-right: 35px;
 }
 .numero-container {
     margin-left: 10px;
@@ -291,7 +342,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Roboto';
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -540,7 +591,6 @@ line-height: 30px;
     padding: 0 45px;
 }
 .contacto-info {
-    width: 500px;
     height: 1033px;
     padding: 0 96px;
 }
@@ -620,179 +670,372 @@ input[type=submit] {
 }
 
 
-footer {
-    width: 1116px;
-    height: 250px;
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+}
+.pie-de-pagina{
+    width: 75%;
+    height: 260px;
+    display: flex;
     background-color: #f9d1d1d6;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px #aeaeae;
-    margin-bottom: 100px;
+    box-shadow: 0px 0px 30px #aeaeae;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
-footer h3 {
-    font-family: 'Roboto';
+.pie-1{
+    display: flex;
+    width: 95%;
+    height: 33%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.pie-1 h3 {
+    display: flex;
+    width: 90%;
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 45px;
-    line-height: 53px;
-    margin-top: 71px;
-    margin-left: 45px;
 }
-footer p {
-    font-family: 'Roboto';
+.pie-2{
+    display: flex;
+    width: 52%;
+    height: 33%;
+    justify-content: center;
+    align-items: center;
+}
+.pie-2 p{
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
-    margin-top: 24px;
-    margin-left: 90px;
+
 }
 .footer-icon-container {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 .footer-icon-container img {
     padding: 10px;
 }
 
-
 /*MEDIA QUERIES*/
 
-@media all and (max-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1439px){
+    nav ul li a{
+        font-size: 12px;
+    }
     .inicio{
-        width: 100%;
-        height: 500px;
-        background: #efa5a980;
-        margin-bottom: 80px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: stretch;
-        align-content: stretch;
+        height: 90vh;
+    }
+    .inicio-contenedor{
+        height: 100%;
     }
     .presentacion1{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: flex-start;
-        width: 80%;
-        height: 35%;
-        font-family: 'Roboto', sans-serif;;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 35px;
-        color: #B50912;
+        font-size: 22px;
     }
     .presentacion2{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: flex-start;
-        width: 80%;
-        height: 15%;
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 70px;
-        color: #000000;
+        font-size: 37px;
     }
     .presentacion3{
+        font-size: 14px;
+    }
+    #sobre_mi {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        justify-content: end;
-        align-items: flex-start;
+    }
+    .sobre-mi-1{
         width: 80%;
-        height: 10%;
-        font-family: 'Roboto', sans-serif;;
-        font-style: normal;
-        font-weight: 400;
+    }
+    .sobre-mi-2{
+        width: 80%;
+        display: flex;
+
+    }
+    .sobre_mi {
+        display: flex;
+        margin-top: 50px;
+        padding-left: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre_mi p {
+        font-size: 16px;
+        margin-right: 0%;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    .habilidades {
+        margin-top: 80px;
+    }
+    .habilidades li {
+        font-size: 16px;
+    }
+    .mis-servicios{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 250px 250px 250px;
+        row-gap: 60px;
+        column-gap: 10px;
+    }
+    .caja-serv{
+        width: auto;
+    }
+    .caja-servicios-1 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-2 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-3 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-4 img{
+        width: 23px;
+        height: 37px;
+    }
+    .caja-servicios-5 img{
+        width: 34.19px;
+        height: 26.91px;
+    }
+    .caja-servicios-6 img{
+        width: 44.67px;
+        height: 26.2px;
+    }
+    .container-rosa {
+        width: 100%;
+    }
+    .subtitulo {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .capa{
+        opacity: 1;
+    }
+    .capa h2{
+        font-size: 27px;
+    }
+    .pie-de-pagina{
+         height: 240px;
+    }
+    .pie-1{
+         width: 95%;
+    }
+    .pie-1 h3 {
+         width: 90%;
+         font-size: 40px;
+    }
+    .pie-2{
+         width: 56%;
+    }
+    .pie-2 p{
+         font-size: 18px;    
+    }
+    .contacto-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #f9d1d1;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
         font-size: 12px;
-        line-height: 30px;
-        color: #494949;
     }
-    .presentacion4{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        width: 75%;
-        height: 50%;
+    
+    .inicio{
+        height: 80vh;
     }
-    .boton_inicio{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 40px;
-        width: 160px;
-        height: 54px;
-        left: 161px;
-        top: 499px;
-        background: #EA3B3D;
-        border-radius: 50px;
-        border: none;
-        cursor: pointer;
+    .inicio-contenedor{
+        height: 100%;
     }
-    .boton_inicio p{
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .presentacion1{
         font-size: 18px;
-        line-height: 30px;
-        color: #151D41;
     }
-    .img{
+    .presentacion2{
+        font-size: 32px;
+    }
+    .presentacion3{
+        font-size: 13px;
+    }
+    #sobre_mi {
         display: flex;
-        width: 45%;
-        height: 95%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sobre-mi-1{
+        width: 80%;
+    }
+    .sobre-mi-2{
+        width: 80%;
+        display: flex;
+
+    }
+    .sobre_mi {
+        display: flex;
+        margin-top: 50px;
+        padding-left: 0%;
+        flex-direction: column;
         align-items: center;
     }
-    .img1{
-        border-radius: 50%;
-        width: 75%;
+    .sobre_mi p {
+        font-size: 12px;
+        margin-right: 0%;
     }
     h2 {
         font-size: 30px;
     }
-    .trabajos{
-        display: flex;
-        height: 8vh;
-        align-items: center;
-        padding-left: 20px;
+    .habilidades {
+        margin-top: 60px;
+    }
+    .habilidades li {
+        font-size: 12px;
+    }
+    .mis-servicios{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 250px 250px 250px;
+        row-gap: 60px;
+        column-gap: 10px;
+    }
+    .caja-serv{
+        width: auto;
+    }
+    .caja-servicios-1 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-2 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-3 img{
+        width: 50px;
+        height: 50px;
+    }
+    .caja-servicios-4 img{
+        width: 23px;
+        height: 37px;
+    }
+    .caja-servicios-5 img{
+        width: 34.19px;
+        height: 26.91px;
+    }
+    .caja-servicios-6 img{
+        width: 44.67px;
+        height: 26.2px;
+    }
+    .subtitulo {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 16px;
     }
     .capa{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #1d1d1bb3;
-        transition: all 800ms ease-out;
         opacity: 1;
-        text-align-last: center;
-        text-align: center;
     }
     .capa h2{
-        width: 100%;
-        height: 100%;
+        font-size: 18px;
+    }
+    .pie-de-pagina{
+         height: 230px;
+    }
+    .pie-1{
+         width: 95%;
+    }
+    .pie-1 h3 {
+         width: 90%;
+         font-size: 30px;
+    }
+    .pie-2{
+         width: 54%;
+    }
+    .pie-2 p{
+         font-size: 13px;    
+    }
+    .contacto-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.75);
+        flex-direction: column-reverse;
+    }
+    .contacto-container img {
+        width: 100%;
+    }
+    .container-rosa {
+        width: 100%;
+    }
+    .titulo-trabajos-container p{
         font-size: 20px;
     }
-}
-@media (max-width: 858px){
-    nav{
-        background: #efa5a9;
+    .titulo-trabajos-container a{
+        font-size: 15px;
     }
+    .titulo-trabajos-container img{
+        width: 15px;
+    }
+    .img-trabajos {
+        top: 50px;
+        width: 400px;
+    }
+    .contact-info {
+        height: 900px;
+        margin-top: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+}
+@media (min-width: 540px) and (max-width: 768px){
     .checkbtn{
         display: block;
     }
-    ul{
-        position: absolute;
+     nav ul{
+        position: fixed;
         width: 100%;
         height: 100vh;
-        background: #efa5a9;
+        background: #f9d1d1;
         top: 80px;
         left: -110%;
         text-align: center;
@@ -806,6 +1049,12 @@ footer p {
     nav ul li a{
         font-size: 20px;
     }
+    .inicio{
+        height: 65vh;
+    }
+    .inicio-contenedor{
+        height: 100%;
+    }
     li a:hover, li a.active{
         background: none;
         color: red;
@@ -813,4 +1062,357 @@ footer p {
     #check:checked ~ ul{
         left:0;
     }
+    .presentacion1{
+        font-size: 17px;
+    }
+    .presentacion2{
+        font-size: 27px;
+    }
+    .presentacion3{
+        font-size: 11px;
+    }
+    #sobre_mi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sobre-mi-1{
+        width: 80%;
+    }
+    .sobre-mi-2{
+        width: 80%;
+        display: flex;
+
+    }
+    .sobre_mi {
+        display: flex;
+        margin-top: 40px;
+        padding-left: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre_mi p {
+        font-size: 12px;
+        margin-right: 0%;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .habilidades {
+        margin-top: 40px;
+        width: 50%;
+    }
+    .habilidades li {
+        font-size: 13px;
+    }
+    .mis-servicios{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 170px 170px 170px;
+        row-gap: 60px;
+        column-gap: 10px;
+    }
+    .caja-serv{
+        width: auto;
+    }
+    .caja-servicios-1 img{
+        width: 30px;
+        height: 30px;
+    }
+    .caja-servicios-1 p{
+        font-size: 8px;
+    }
+    .caja-servicios-2 img{
+        width: 30px;
+        height: 30px;
+    }
+    .caja-servicios-2 p{
+        font-size: 8px;
+    }
+    .caja-servicios-3 img{
+        width: 30px;
+        height: 30px;
+    }
+    .caja-servicios-3 p{
+        font-size: 8px;
+    }
+    .caja-servicios-4 img{
+        width: 13px;
+        height: 27px;
+    }
+    .caja-servicios-4 p{
+        font-size: 8px;
+    }
+    .caja-servicios-5 img{
+        width: 24.19px;
+        height: 16.91px;
+    }
+    .caja-servicios-5 p{
+        font-size: 11px;
+    }
+    .caja-servicios-6 img{
+        width: 24.67px;
+        height: 16.2px;
+    }
+    .caja-servicios-6 p{
+        font-size: 8px;
+    }
+    .subtitulo {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .capa{
+        opacity: 1;
+    }
+    .capa h2{
+        font-size: 17px;
+    }
+    .pie-de-pagina{
+         height: 220px;
+         margin-bottom: 15px;
+    }
+    .pie-1{
+         width: 95%;
+    }
+    .pie-1 h3 {
+         width: 90%;
+         font-size: 26px;
+    }
+    .pie-2{
+         width: 90%;
+    }
+    .pie-2 p{
+         font-size: 14px;    
+    }
+    .footer-icon-container img {
+         padding: 10px;
+    }
+    .contacto-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contacto-container img {
+        width: 100%;
+    }
+    .container-rosa {
+        width: auto;
+    }
+    .titulo-trabajos-container p{
+        font-size: 17px;
+    }
+    .titulo-trabajos-container a{
+        font-size: 15px;
+    }
+    .titulo-trabajos-container img{
+        width: 13px;
+    }
+    .img-trabajos {
+        top: 50px;
+        width: 400px;
+    }
+    .contact-info {
+        height: 700px;
+        margin-top: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
 }
+@media (min-width: 300px) and (max-width: 540px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f9d1d1;
+        top: 80px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 11px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .inicio{
+        height: 55vh;
+    }
+    .inicio-contenedor{
+        height: 100%;
+    }
+    .presentacion1{
+        font-size: 11px;
+    }
+    .presentacion2{
+        font-size: 22px;
+    }
+    .presentacion3{
+        font-size: 8px;
+    }
+    #sobre_mi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sobre-mi-1{
+        width: 100%;
+    }
+    .sobre-mi-2{
+        width: 80%;
+        display: flex;
+        
+    }
+    .sobre_mi {
+        display: flex;
+        margin-top: 20px;
+        padding-left: 0%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre_mi p {
+        font-size: 10px;
+        margin-right: 0%;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .habilidades {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .habilidades li {
+        font-size: 11px;
+    }
+    .mis-servicios{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 90px 90px 90px;
+        row-gap: 60px;
+        column-gap: 10px;
+    }
+    .caja-serv{
+        width: auto;
+    }
+    .caja-servicios-1 img{
+        width: 15px;
+        height: 15px;
+    }
+    .caja-servicios-1 p{
+        font-size: 8px;
+    }
+    .caja-servicios-2 img{
+        width: 15px;
+        height: 15px;
+    }
+    .caja-servicios-2 p{
+        font-size: 8px;
+    }
+    .caja-servicios-3 img{
+        width: 15px;
+        height: 15px;
+    }
+    .caja-servicios-3 p{
+        font-size: 8px;
+    }
+    .caja-servicios-4 img{
+        width: 7px;
+        height: 13px;
+    }
+    .caja-servicios-4 p{
+        font-size: 8px;
+    }
+    .caja-servicios-5 img{
+        width: 12.9px;
+        height: 8.96px;
+    }
+    .caja-servicios-5 p{
+        font-size: 8px;
+    }
+    .caja-servicios-6 img{
+        width: 12.34px;
+        height: 8.1px;
+    }
+    .caja-servicios-6 p{
+        font-size: 8px;
+    }
+    .subtitulo {
+        font-size:11px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    .capa{
+        opacity: 1;
+    }
+    .capa h2{
+        font-size: 15px;
+    }
+    .pie-de-pagina{
+         height: 200px;
+         margin-bottom: 12px;
+    }
+    .pie-1{
+         width: 95%;
+    }
+    .pie-1 h3 {
+         width: 90%;
+         font-size: 20px;
+    }
+    .pie-2{
+         width: 90%;
+    }
+    .pie-2 p{
+         font-size: 10px;    
+    }
+    .footer-icon-container img {
+         padding: 10px;
+    } 
+    .contacto-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contacto-container img {
+        width: 100%;
+    }
+    .container-rosa {
+        width: 100%;
+    }
+    .titulo-trabajos-container p{
+        font-size: 19px;
+    }
+    .titulo-trabajos-container a{
+        font-size: 15px;
+    }
+    .titulo-trabajos-container img{
+        width: 13px;
+    }
+    .img-trabajos {
+        top: 50px;
+        width: 300px;
+    }
+    .contact-info {
+        height: 500px;
+        margin-top: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+}      

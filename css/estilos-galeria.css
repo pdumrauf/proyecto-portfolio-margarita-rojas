@@ -1,0 +1,225 @@
+body {
+     background-image: linear-gradient(135deg, white 0%, #f9d1d1 100%);
+}
+
+.cabecera-galeria{
+     display: flex;
+     align-items: center;
+     background: #f9d1d1;
+     height: 80px;
+     width: 100%; 
+     box-shadow: 0px 0px 20px #aeaeae;
+}
+.titulo {
+     font-size: 55px;
+     margin-bottom: 50px;
+}
+.btn{
+     border-radius: 20px;
+}
+.regreso{
+     margin-left: 10px;
+}
+
+.container{
+     margin-top: 50px;
+}
+
+.galeria img {
+     box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+     border-radius: 15px;
+}
+
+.materialbox-caption {
+     bottom: 30px;
+     right: 0;
+     width: 50%;
+     height: auto;
+     padding: 10px;
+     margin: auto;
+     background: #000;
+     box-shadow: 1px 1px 5px 5px #fff;
+     font-size: 20px;
+     color: #fff;
+     line-height: 28px;
+}
+
+.galeria .col {
+     margin-bottom: 20px;
+}
+
+footer{
+     width: 100%;
+     margin-top: 100px;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.pie-de-pagina{
+     width: 75%;
+     height: 260px;
+     display: flex;
+     background-color: #f9d1d1d6;
+     border-radius: 15px;
+     box-shadow: 0px 0px 30px #aeaeae;
+     margin-bottom: 20px;
+     justify-content: flex-end;
+     flex-direction: column;
+}
+.pie-1{
+     display: flex;
+     width: 95%;
+     justify-content: center;
+     align-items: flex-end;
+}
+.pie-1 h3 {
+     display: flex;
+     width: 90%;
+     height: 33%;
+     font-family: 'Roboto' sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 45px;
+}
+.pie-2{
+     display: flex;
+     width: 52%;
+     justify-content: center;
+}
+.pie-2 p{
+     font-family: 'Roboto' sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 30px;
+
+}
+.footer-icon-container {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+}
+.footer-icon-container img {
+     padding: 10px;
+}
+
+@media screen and (max-width: 600px){
+     .materialbox-caption {
+          width: 90%;
+     }
+}
+/*MEDIA QUERIES*/
+
+@media (min-width: 1024px) and (max-width: 1440px){
+     .cabecera-galeria{
+          height: 70px;
+     }
+     .titulo {
+          font-size: 45px;
+     }
+     .pie-de-pagina{
+          height: 240px;
+     }
+     .pie-1{
+          width: 95%;
+     }
+     .pie-1 h3 {
+          width: 90%;
+          font-size: 34px;
+     }
+     .pie-2{
+          width: 52%;
+     }
+     .pie-2 p{
+          font-size: 14px;    
+     }
+}
+ 
+@media (min-width: 768px) and (max-width: 1024px){
+     .cabecera-galeria{
+          height: 65px;
+     }
+     .titulo {
+          font-size: 36px;
+     }
+     
+     .pie-de-pagina{
+          height: 200px;
+     }
+     .pie-1{
+          width: 95%;
+     }
+     .pie-1 h3 {
+          width: 90%;
+          font-size: 25px;
+     }
+     .pie-2{
+          width: 52%;
+     }
+     .pie-2 p{
+          font-size: 10px;    
+     }
+}
+@media (min-width: 520px) and (max-width: 768px){
+     .cabecera-galeria{
+          height: 60px;
+     }
+     .titulo {
+          font-size: 30px;
+     }
+     .regreso{
+          margin-left: 8px;
+     }
+     .pie-de-pagina{
+          height: 180px;
+          margin-bottom: 15px;
+     }
+     .pie-1{
+          width: 95%;
+     }
+     .pie-1 h3 {
+          width: 90%;
+          font-size: 20px;
+     }
+     .pie-2{
+          width: 57%;
+     }
+     .pie-2 p{
+          font-size: 8px;    
+     }
+     .footer-icon-container img {
+          padding: 10px;
+     }  
+}
+@media (min-width: 100px) and (max-width: 520px){
+     .cabecera-galeria{
+          height: 60px;
+     }
+     .titulo {
+          font-size: 24px;
+     }
+     .regreso{
+          margin-left: 10px;
+     }
+     .pie-de-pagina{
+          height: 170px;
+          margin-bottom: 12px;
+     }
+     .pie-1{
+          width: 95%;
+     }
+     .pie-1 h3 {
+          width: 90%;
+          font-size: 14px;
+     }
+     .pie-2{
+          width: 60%;
+     }
+     .pie-2 p{
+          font-size: 5px;    
+     }
+     .footer-icon-container img {
+          padding: 10px;
+     }       
+}
